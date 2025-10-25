@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Color Changer</title>
+    <style>
+      .color {
+        width: 500px;
+        height: 300px;
+        margin-top: 180px;
+        margin-left: 450px;
+      }
+      button {
+        padding: 5px 20px;
+        font-size: 20px;
+        border: none;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+      }
+      button:hover {
+        background-color: white;
+        color: black;
+      }
+      @media (max-width: 648px) {
+        .color {
+          width: 90%;
+          height: auto;
+          margin: 200px auto;
+          padding: 15px;
+        }
+
+        h1 {
+          font-size: 22px;
+        }
+
+        h3 {
+          font-size: 16px;
+        }
+
+        button {
+          font-size: 20px;
+          padding: 8px 50px;
+          margin-left: 100px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="color">
+      <h1>Background Color Changing</h1>
+      <h3>
+        To change the color of the background, click on the button given below:
+      </h3>
+      <button onclick="colorChanging()">Click</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
